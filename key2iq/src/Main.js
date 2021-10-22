@@ -4,6 +4,7 @@ import "./Header.css"
 import RE from "./images/3RE.png"
 import RE3 from "./images/3RE3.png"
 import RE2 from "./images/3RE2.png"
+import api from "./images/api.png"
 import ReactDOM from 'react-dom';
 import { Button, Jumbotron, Card, CardHeader,CardBody } from 'reactstrap';
 
@@ -142,6 +143,53 @@ function Main() {
             <img style={{width: "100%", height: "auto"}} src = {RE3}/>
             </div>
         </div>
+
+        <br></br><br></br>
+
+    <div className ="Row">
+        <div className="col-12" style={{marginLeft:"25%", width:"50%",}}>
+        <h3>Learn the concepts used in this project</h3>
+        </div>
+    </div>
+    <div className="Row" style={{justifyContent:'center'}}>
+        <div className="col-12"  style={{justifyContent:'center', display:"flex"}} >
+        <div style={{background:"#FFCC33", width:"250px", height:"5px"}}>
+        </div>
+    </div>
+    </div>
+    <br></br>
+    <div>
+        <div style={{marginLeft: "20%", marginRight: "20%"}}>
+        <ul>
+            <li><a href="https://afteracademy.com/blog/design-node-js-backend-architecture-like-a-pro" rel="nofollow" target="_blank" >Design Node.js Backend Architecture like a Pro</a></li>
+            <li><a href="https://youtu.be/Nwh7wTtUV5I" rel="nofollow">The video guide to build and run this project</a></li>
+            <li><a href="https://afteracademy.com/blog/implement-json-web-token-jwt-authentication-using-access-token-and-refresh-token" rel="nofollow" target="_blank">Implement JSON Web Token (JWT) Authentication using AccessToken and RefreshToken</a></li>
+            <li><a href="https://afteracademy.com/blog/typescript-tutorial-for-beginners" rel="nofollow" target="_blank">TypeScript Tutorial For Beginners</a></li>
+            <li><a href="https://afteracademy.com/blog/from-javascript-to-typescript" rel="nofollow" target="_blank">From JavaScript to TypeScript</a></li>
+            <li><a href="https://afteracademy.com/blog/authentication-vs-authorization" rel="nofollow" target="_blank">Authentication vs Authorization</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <br></br><br></br>
+
+    <div className ="Row">
+        <div className="col-12" style={{marginLeft:"25%", width:"50%",}}>
+        <h3>You can find the complete API documentation <a href="https://documenter.getpostman.com/view/1552895/SzYUZg52?version=latest" rel="nofollow" target="_blank" style={{color:"#107896"}}>here</a></h3>
+        </div>
+    </div>
+    <div className="Row" style={{justifyContent:'center'}}>
+        <div className="col-12"  style={{justifyContent:'center', display:"flex"}} >
+        <div style={{background:"#FFCC33", width:"250px", height:"5px"}}>
+        </div>
+    </div>
+    </div>
+    <br></br>
+    <div>
+        <div style={{marginLeft: "20%", marginRight: "20%"}}>
+        <img href="https://documenter.getpostman.com/view/1552895/SzYUZg52?version=latest" target="_blank" style={{width: "40%", height: "auto"}} src = {api}/>
+        </div>
+    </div>
 
 
     </div>

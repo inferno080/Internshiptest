@@ -5,12 +5,31 @@ import RE from "./images/3RE.png"
 import RE3 from "./images/3RE3.png"
 import RE2 from "./images/3RE2.png"
 import api from "./images/api.png"
+import heart from "./images/heart.svg"
+import teddy from "./images/teddy.svg"
 import ReactDOM from 'react-dom';
 import { Button, Jumbotron, Card, CardHeader,CardBody } from 'reactstrap';
 
 function Footer() {
   return (
     <div>
+        <br></br><br></br>
+        <div className="Row">
+        <div className="col-12" style={{ marginLeft: "25%", width: "50%" }}>
+          <h3>Find this project useful ? <img src={heart} style={{width:"5%", height:"auto"}}></img></h3>
+        </div>
+        <div className="Row">
+        <div className="col-12" style={{ marginLeft: "25%", width: "50%" }}>
+        <button type="button" className="btn btn-warning">Support Us</button>
+        </div>
+        </div>
+        <br></br><br></br>
+        <div className="Row">
+        <div className="col-12" style={{ marginLeft: "25%", width: "50%" }}>
+          <img src={teddy} style={{width:"40%", height:"auto"}}></img>
+        </div>
+      </div>
+      </div>
         <br></br><br></br>
         <footer class="footer"  style={{background:"#FFCC33", marginBottom: "-10%", paddingBottom: "2%", paddingTop: "2%"}}>
         <div class="container">
@@ -22,9 +41,6 @@ function Footer() {
         You may obtain a copy of the License at</p>
 
         <a href = "http://www.apache.org/licenses/LICENSE-2.0"></a>
-
-
-
         </span>
         </div>
         </footer>

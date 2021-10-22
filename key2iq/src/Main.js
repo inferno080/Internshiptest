@@ -1,9 +1,12 @@
 
 import React from 'react';
-import "./Header.css"
+import "./Main.css"
 import RE from "./images/3RE.png"
 import RE3 from "./images/3RE3.png"
 import RE2 from "./images/3RE2.png"
+import backend from "./images/backend.png"
+import oc from "./images/online-course.png"
+import { Carousel } from '@trendyol-js/react-carousel';
 import api from "./images/api.png"
 import ReactDOM from 'react-dom';
 import { Button, Jumbotron, Card, CardHeader,CardBody } from 'reactstrap';
@@ -45,7 +48,7 @@ function Main() {
         </div>
         </div>
         <br></br>
-        <div>
+        <div style={{textAlign:'left'}} >
             <div style={{marginLeft: "20%", marginRight: "20%"}}>
                 <p>The main focus will be to create a maintainable and highly testable architecture.
                     Following are the features of this project:</p>
@@ -158,7 +161,7 @@ function Main() {
     </div>
     </div>
     <br></br>
-    <div>
+    <div style={{textAlign:'left'}} >
         <div style={{marginLeft: "20%", marginRight: "20%"}}>
         <ul>
             <li><a href="https://afteracademy.com/blog/design-node-js-backend-architecture-like-a-pro" rel="nofollow" target="_blank" >Design Node.js Backend Architecture like a Pro</a></li>
@@ -191,7 +194,90 @@ function Main() {
         </div>
     </div>
 
+    <br></br><br></br>
 
+    <div className ="Row">
+        <div className="col-12" style={{marginLeft:"25%", width:"50%",}}>
+        <h3>How to build and run this project <a href="https://documenter.getpostman.com/view/1552895/SzYUZg52?version=latest" rel="nofollow" target="_blank" style={{color:"#107896"}}>here</a></h3>
+        </div>
+    </div>
+    <div className="Row" style={{justifyContent:'center'}}>
+        <div className="col-12"  style={{justifyContent:'center', display:"flex"}} >
+        <div style={{background:"#FFCC33", width:"250px", height:"5px"}}>
+        </div>
+    </div>
+    </div>
+    <br></br>
+    <div>
+        <div style={{marginLeft: "20%", marginRight: "20%", textAlign:'left'}}>
+        <ul>
+<li>Install using Docker Compose [<strong>Recommended Method</strong>]
+<ul>
+<li>Clone this repo.</li>
+<li>Make a copy of <strong>.env.example</strong> file to <strong>.env</strong>.</li>
+<li>Make a copy of <strong>keys/private.pem.example</strong> file to <strong>keys/private.pem</strong>.</li>
+<li>Make a copy of <strong>keys/public.pem.example</strong> file to <strong>keys/public.pem</strong>.</li>
+<li>Make a copy of <strong>tests/.env.test.example</strong> file to <strong>tests/.env.test</strong>.</li>
+<li>Install Docker and Docker Compose. <a href="https://docs.docker.com/install/" rel="nofollow" target="_blank" style={{style:"textDecoration: none",}}>Find Instructions Here</a>.</li>
+<li>Execute <code className="sus">docker-compose up -d</code> in terminal from the repo directory.</li>
+<li>You will be able to access the api from <a href="http://localhost:3000" rel="nofollow" target="_blank" style={{style:"textDecoration: none", }}>http://localhost:3000</a></li>
+<li><em>If having any issue</em> then make sure 3000 port is not occupied else provide a different port in <strong>.env</strong> file.</li>
+<li><em>If having any issue</em> then make sure 27017 port is not occupied else provide a different port in <strong>.env</strong> file.</li>
+</ul>
+</li>
+<li>Run The Tests
+<ul>
+<li>Install node.js and npm on your local machine.</li>
+<li>From the root of the project executes in terminal <code className="sus">npm install</code>.</li>
+<li><em>Use the latest version of node on the local machine if the build fails</em>.</li>
+<li>To run the tests execute <code className="sus">npm test</code>.</li>
+</ul>
+</li>
+<li>Install Without Docker [<strong>2nd Method</strong>]
+<ul>
+<li>Install MongoDB on your local.</li>
+<li>Do steps 1 to 5 as listed for <strong>Install using Docker Compose</strong>.</li>
+<li>Do steps 1 to 3 as listed for <strong>Run The Tests</strong>.</li>
+<li>Create users in MongoDB and seed the data taking reference from the <strong>addons/init-mongo.js</strong></li>
+<li>Change the <code className="sus">DB_HOST</code> to <code className="sus">localhost</code> in <strong>.env</strong> and <strong>tests/.env.test</strong> files.</li>
+<li>Execute <code className="sus">npm start</code> and You will be able to access the API from <a href="http://localhost:3000" rel="nofollow" target="_blank" style={{style:"textDecoration: none", }}>http://localhost:3000</a></li>
+<li>To run the tests execute <code className="sus">npm test</code>.</li>
+</ul>
+</li>
+</ul>
+        </div>
+    </div>
+
+    <br></br><br></br>
+
+    <div className ="Row">
+        <div className="col-12" style={{marginLeft:"25%", width:"50%",}}>
+        <h3>Explore Online Tutorials and Courses To Learn More by AfterAcademy</h3>
+        </div>
+    </div>
+    <div className="Row" style={{justifyContent:'center'}}>
+        <div className="col-12"  style={{justifyContent:'center', display:"flex"}} >
+        <div style={{background:"#FFCC33", width:"250px", height:"5px"}}>
+        </div>
+    </div>
+    </div>
+    <br></br>
+    <div className="row row-content">
+                <div className="col-12 col-md-6" style={{justifyContent:'center', display:'flex',paddingLeft:"20%"}}>
+                <div className="item" style={{width:"70%"}} >
+                    <h4 style={{background:"#107896", color:'white', paddingTop:'2%', paddingBottom:'2%'}}>Backend Tutorial </h4>
+                    <img src={backend} style={{width:"100%"}}></img>
+                    <button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button>
+                </div>
+                </div>
+                <div className="col-12 col-md-6" style={{justifyContent:'center', display:'flex', paddingRight:"20%"}}>
+                <div className="item" style={{width:"70%"}}>
+                    <h4 style={{background:"#107896", color:'white', paddingTop:'2%', paddingBottom:'2%'}}>Online Courses for Backend </h4>
+                    <img src={oc} style={{width:"100%"}}></img>
+                    <button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button>
+                </div>
+                </div>
+        </div>
     </div>
   );
 }

@@ -1,11 +1,11 @@
 
 import React from 'react';
+import cor from "./images/online-course.png"
 import "./Main.css"
 import RE from "./images/3RE.png"
 import RE3 from "./images/3RE3.png"
 import RE2 from "./images/3RE2.png"
 import backend from "./images/backend.png"
-import oc from "./images/online-course.png"
 import { Carousel } from '@trendyol-js/react-carousel';
 import api from "./images/api.png"
 import ReactDOM from 'react-dom';
@@ -270,10 +270,49 @@ function Main() {
                     <button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button>
                 </div>
                 </div>
-                <div className="col-12 col-md-6" style={{justifyContent:'center', display:'flex', paddingRight:"20%"}}>
-                <div className="item" style={{width:"70%"}}>
-                    <h4 style={{background:"#107896", color:'white', paddingTop:'2%', paddingBottom:'2%'}}>Online Courses for Backend </h4>
-                    <img src={oc} style={{width:"100%"}}></img>
+                <div className="col-12 col-md-6" style={{justifyContent:'center', display:'flex',paddingRight:"20%"}}>
+                <div className="item" style={{width:"70%"}} >
+                    <h5 style={{background:"#107896", color:'white', paddingTop:'3%', paddingBottom:'3%'}}> Online Courses for Backend</h5>
+                    <img src={backend} style={{width:"100%"}}></img>
+                    <button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button>
+                </div>
+                </div>
+        </div>
+        <br></br><br></br>
+
+    <div className ="Row">
+        <div className="col-12" style={{marginLeft:"25%", width:"50%",}}>
+        <h3>Learn Backend Development From Our Videos</h3>
+        </div>
+    </div>
+    <div className="Row" style={{justifyContent:'center'}}>
+        <div className="col-12"  style={{justifyContent:'center', display:"flex"}} >
+        <div style={{background:"#FFCC33", width:"250px", height:"5px"}}>
+        </div>
+    </div>
+    </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <div className="row row-content">
+                <div className="col-12 col-md-4" style={{justifyContent:'center', display:'flex'}}>
+                <div className="item" style={{width:"70%"}} >
+                    <h5 style={{background:"#107896", color:'white', paddingTop:'3%', paddingBottom:'3%'}}>Backend for Beginners </h5>
+                    <img src={backend} style={{width:"100%"}}></img>
+                    <button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button>
+                </div>
+                </div>
+                <div className="col-12 col-md-4" style={{justifyContent:'center', display:'flex'}}>
+                <div className="item" style={{width:"70%"}} >
+                    <h5 style={{background:"#107896", color:'white', paddingTop:'3%', paddingBottom:'3%'}}>Backend for Startups </h5>
+                    <img src={backend} style={{width:"100%"}}></img>
+                    <button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button>
+                </div>
+                </div>
+                <div className="col-12 col-md-4" style={{justifyContent:'center', display:'flex'}}>
+                <div className="item" style={{width:"70%"}} >
+                    <h5 style={{background:"#107896", color:'white', paddingTop:'3%', paddingBottom:'3%'}}>Javascript for Beginners</h5>
+                    <img src={backend} style={{width:"100%"}}></img>
                     <button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button>
                 </div>
                 </div>

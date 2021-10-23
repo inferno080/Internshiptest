@@ -234,7 +234,7 @@ Authorization: Bearer <your_token_received_from_signup_or_login>
 
           <pre className="one">
             <code>
-            <img src={copy} type="button" onClick={()=>navigator.clipboard.writeText(code1)} alt="avatar" className= "two" style={{height:"auto" , width:"25px", position:"absolute", marginLeft: "60%"}}></img>
+            <img src={copy} type="button" className="btn btn-warning yes" onClick={()=>navigator.clipboard.writeText(code1)} alt="avatar" className= "two" style={{height:"auto" , width:"25px", position:"absolute", marginLeft: "60%"}}></img>
               {code1}
             </code>
           </pre>

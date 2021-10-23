@@ -6,6 +6,9 @@ import RE from "./images/3RE.png"
 import RE3 from "./images/3RE3.png"
 import RE2 from "./images/3RE2.png"
 import backend from "./images/backend.png"
+import javascript from "./images/javascript.png";
+import stairs from "./images/stairs.png";
+import startup from "./images/startup.png";
 import { Carousel } from '@trendyol-js/react-carousel';
 import api from "./images/api.png"
 import ReactDOM from 'react-dom';
@@ -267,14 +270,14 @@ function Main() {
                 <div className="item" style={{width:"70%"}} >
                     <h4 style={{background:"#107896", color:'white', paddingTop:'2%', paddingBottom:'2%'}}>Backend Tutorial </h4>
                     <img src={backend} style={{width:"100%"}}></img>
-                    <button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button>
+                   <a href="https://afteracademy.com/blogs/backend" target="_blank"> <button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button></a>
                 </div>
                 </div>
                 <div className="col-12 col-md-6" style={{justifyContent:'center', display:'flex',paddingRight:"20%"}}>
                 <div className="item" style={{width:"70%"}} >
                     <h5 style={{background:"#107896", color:'white', paddingTop:'3%', paddingBottom:'3%'}}> Online Courses for Backend</h5>
-                    <img src={backend} style={{width:"100%"}}></img>
-                    <button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button>
+                    <img src={cor} style={{width:"70%", marginTop:"40px", marginBottom: "40px"}}></img>
+                   <a href="https://afteracademy.com/courses/backend" target="_blank"> <button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button></a>
                 </div>
                 </div>
         </div>
@@ -295,25 +298,25 @@ function Main() {
     <br></br>
     <br></br>
     <div className="row row-content">
-                <div className="col-12 col-md-4" style={{justifyContent:'center', display:'flex'}}>
+                <div className="col-12 col-md-4" style={{justifyContent:'center', display:'flex',}}>
                 <div className="item" style={{width:"70%"}} >
                     <h5 style={{background:"#107896", color:'white', paddingTop:'3%', paddingBottom:'3%'}}>Backend for Beginners </h5>
-                    <img src={backend} style={{width:"100%"}}></img>
-                    <button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button>
+                    <img src={stairs} style={{width:"70%", marginTop:"40px", marginBottom: "40px"}}></img>
+                    <a href="https://youtu.be/Q0nfLi-4GBg" target="_blank"><button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button></a>
                 </div>
                 </div>
                 <div className="col-12 col-md-4" style={{justifyContent:'center', display:'flex'}}>
                 <div className="item" style={{width:"70%"}} >
                     <h5 style={{background:"#107896", color:'white', paddingTop:'3%', paddingBottom:'3%'}}>Backend for Startups </h5>
-                    <img src={backend} style={{width:"100%"}}></img>
-                    <button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button>
+                    <img src={startup} style={{width:"70%" , marginTop:"40px", marginBottom: "40px"}}></img>
+                    <a href="https://www.youtube.com/playlist?list=PLqOiaH9id5quh5Dph5yuXfdHVGe1LrKvT" target="_blank"><button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button></a>
                 </div>
                 </div>
                 <div className="col-12 col-md-4" style={{justifyContent:'center', display:'flex'}}>
                 <div className="item" style={{width:"70%"}} >
                     <h5 style={{background:"#107896", color:'white', paddingTop:'3%', paddingBottom:'3%'}}>Javascript for Beginners</h5>
-                    <img src={backend} style={{width:"100%"}}></img>
-                    <button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button>
+                    <img src={javascript} style={{width:"70%" ,marginTop:"40px", marginBottom: "40px"}}></img>
+                    <a href="https://www.youtube.com/playlist?list=PLqOiaH9id5qtw5MhI-C1G3CS7RVZ8ejct" target="_blank"><button type="button" className="btn btn-warning" style={{marginBottom:'3%'}} >Check Out</button></a>
                 </div>
                 </div>
         </div>
